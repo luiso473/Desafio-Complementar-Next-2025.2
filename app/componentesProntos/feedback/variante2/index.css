@@ -1,0 +1,159 @@
+.container_feedback{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem;
+}
+.title_feedback{
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.carousel-btn.left {
+  left: 0;
+}
+
+.carousel-btn.right {
+  right: 0;
+}
+.mySwiper-fb{
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    max-width: 320px; /*setar pro tamanho da tela pro carrossel ficar certinho*/
+}
+.mySwiper-fb .swiper-pagination{
+    display: none;
+}
+
+.slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+
+    max-width: 320px; /*setar pro tamanho da tela pro carrossel ficar certinho. E padding caso necessario pra ajudar a centralizar é aqui tambem*/
+}
+
+.swiper-wrapper{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: start;
+
+    padding-left: 8.5rem; /*talvez interfira na centralização dos cards. Ent se tudo nao centralizar, deve ser esse padding*/
+}
+@media (min-width:425px)
+{
+    .title_feedback{
+        font-size: 2rem;
+    }
+    .swiper-wrapper{
+        padding-left: 3.5rem;
+    }
+    .mySwiper-fb{
+        max-width: 65%;
+    }
+    .slide{
+        max-width: 425px;
+        padding-left: 1rem;
+    }
+
+}
+
+@media (min-width:768px)
+{
+    .title_feedback{
+        font-size: 2.5rem;
+    }
+
+    .mySwiper-fb{
+        max-width: 680px;
+    }
+    .slide{
+        max-width: 680px;
+        padding-left: 1rem;
+    }
+
+ 
+}
+
+@media (min-width:1024px)
+{
+    .title_feedback{
+        font-size: 2.75rem;
+    }
+    .mySwiper-fb{
+        max-width: 1024px;
+    }
+    .slide{
+        max-width: 1024px;
+        padding-left: 5rem;
+    }
+    .swiper-wrapper{
+        padding-right: 7.5rem;
+    }
+   
+}
+@media (min-width:1440px)
+{
+    .container_feedback{
+        gap: 4rem;
+    }
+    .title_feedback{
+        font-size: 3rem;
+    }
+    .mySwiper-fb{
+        max-width: 1440px;
+    }
+    .swiper-wrapper{
+        padding-left: 9.5rem;
+    }
+    .slide{
+        max-width: 1440px;
+        padding-left: 2rem;
+    }
+      .mySwiper-fb .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (min-width:1920px)
+{
+    .title_feedback{
+        font-size: 4rem;
+    }
+
+    .mySwiper-fb{
+        max-width: 1920px;
+    }
+    .slide{
+        max-width: 1920px;
+        padding-left: 6rem;
+    }
+}
+
+@media (min-width:2560px)
+{   .title_feedback{
+        font-size: 4rem;
+    }
+    .mySwiper-fb{
+        max-width: 2560px;
+    }
+    .swiper-wrapper{
+        padding-left: 14.5rem;
+    }
+    .slide{
+        max-width: 2560px;
+        padding-left: 6rem;
+    }
+      .mySwiper-fb .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+
+}
+

@@ -1,0 +1,180 @@
+.container-sobrenos{
+    display: flex;
+    flex-direction: column;
+    max-width: 100vw;
+    min-height: 100%;
+    align-items: center;
+    color: black;
+    padding: 42px 72px;
+    gap: 36px;
+}
+
+.title-sobrenos{
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+.img-sobrenos{
+    display: none;
+    width: 55%;
+    height: 240px;
+    border-radius: 12px;
+
+}
+.conteudo-sobrenos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 36px;
+    width: 100%;
+
+}
+.desc-sobrenos{
+    width: 80%;
+    font-size: 24px;
+}
+.mvv-sobrenos{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #000;
+}
+
+
+
+@media (min-width:320px)
+{
+    .container-sobrenos{
+        padding:42px 1rem
+    }
+   .desc-sobrenos{
+        font-size: 24px;
+    }
+    .title-sobrenos{
+        font-size: 2rem;
+    }
+    .mvv-sobrenos{
+        gap: 24px;
+    }
+}
+
+
+
+@media (min-width:768px)
+{
+
+    .desc-sobrenos{
+        font-size: 24px;
+        align-items: start;
+    }
+    .title-sobrenos{
+        font-size: 2.5rem;
+    }
+    .img-sobrenos{
+        width: 55%;
+        height: 240px;
+
+    }
+    .mvv-sobrenos{
+        gap: 32px;
+    }
+}
+
+@media (min-width:1024px)
+{   
+    .container-sobrenos{
+        padding:3rem 4rem 4rem 4rem;
+    }
+    .conteudo-sobrenos{
+    flex-direction: row;
+    align-items: center;
+    text-align: start;
+
+    }
+    .title-sobrenos{
+        text-align: start;
+        margin-bottom: -2rem;
+    }
+    .desc-sobrenos{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        white-space: pre-wrap;
+    }
+   
+    .img-sobrenos{
+        display: flex;
+        width: 45%;
+        height: 300px;
+    }
+    .mvv-sobrenos{
+        flex-direction: row;
+        gap: 48px;    
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+
+@media (min-width:1440px)
+{
+    .container-sobrenos{
+        gap: 3rem;
+    }
+    .desc-sobrenos{
+        font-size: 28px;
+    }
+    .title-sobrenos{
+        font-size: 2.75rem;
+    }
+    .img-sobrenos{
+        width: 40%;
+        height: 400px;
+    }
+}
+
+@media (min-width:1920px)
+{
+    .desc-sobrenos{
+        font-size: 40px;
+    }
+    .title-sobrenos{
+        font-size: 3.25rem;
+    }
+    .container-sobrenos{
+        padding: 6rem 5rem;
+    }
+}
+
+@media (min-width:2560px)
+{
+    .desc-sobrenos{
+        font-size: 48px;
+    }
+    .title-sobrenos{
+        font-size: 3.75rem;
+    }
+        .img-sobrenos{
+        width: 40%;
+        height: 520px;
+    }
+}

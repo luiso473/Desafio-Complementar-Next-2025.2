@@ -1,0 +1,197 @@
+.container-feedback{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-feedback{
+    font-weight: 700;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+.card-feedback{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 360px;
+    text-align: center;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+    padding: 1rem 1.25rem;
+    gap: 1rem;
+    border-radius: 1rem;
+
+}
+.desc-feedback{
+    font-size: 1.25rem;
+    font-weight: 400;
+    justify-self: center;
+}
+.desc-card-info{
+    margin: auto 0;
+}
+.client-name{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.jobtitle-company{
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+.card-feedback:hover{
+    transform: scale(1.05);
+
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #007BFF; /* azul ativo */
+}
+
+
+
+@media (min-width:425px){
+
+    .card-feedback{
+        height: 342px;
+        width: 70%;
+    }
+    .title-feedback{
+        font-size: 2rem;
+    }
+    .desc-feedback{
+        font-size: 1.25rem;
+    }
+    .client-name{
+        font-size: 1rem;
+    }
+    .jobtitle-company{
+        font-size: 0.9rem;
+    }
+}
+@media (min-width:768px){
+    .card-feedback{
+        height: 300px;
+    }
+    .container-feedback{
+        gap: 2rem;
+    }
+    .title-feedback{
+        font-size: 2.5rem;
+    }
+    .desc-feedback{
+        font-size: 1.5rem;
+    }
+    .client-name{
+        font-size: 1.25rem;
+    }
+    .jobtitle-company{
+        font-size: 1rem;
+    }
+}
+@media (min-width:1024px){
+    .container-feedback{
+        gap: 3rem;
+    }
+    .card-feedback{
+        width: 60%;
+    }
+    .title-feedback{
+        font-size: 2.75rem;
+    }
+    .desc-feedback{
+        font-size: 1.5rem;
+    }
+    .client-name{
+        font-size: 1.25rem;
+    }
+    .jobtitle-company{
+        font-size: 1rem;
+    }
+}
+@media (min-width:1440px){
+
+    .card-feedback{
+        width: 55%;
+        min-height: 360px;
+    }
+    .title-feedback{
+        font-size: 3rem;
+    }
+    .desc-feedback{
+        font-size: 1.75rem;
+    }
+    .client-name{
+        font-size: 1.5rem;
+    }
+    .jobtitle-company{
+        font-size: 1.25rem;
+    }
+    
+}
+@media (min-width:1920px){
+    .container-feedback{
+        gap: 6rem;
+        padding: 3rem 0;
+    }
+    .card-feedback{
+        padding: 1rem 2.5rem;
+        width: 50%;
+        min-height: 460px;
+    }
+    .title-feedback{
+        font-size: 3.5rem;
+    }
+    .desc-feedback{
+        font-size: 2.25rem;
+    }
+    .client-name{
+        font-size: 2rem;
+    }
+    .jobtitle-company{
+        font-size: 1.75rem;
+    }
+    .dot{
+        width: 0.9rem;
+        height: 0.9rem;
+    }
+}
+@media (min-width:2560px){
+
+    .card-feedback{
+        padding: 2rem 3rem;
+        width: 45%;
+        height: 460px;
+    }
+    .title-feedback{
+        font-size: 4rem;
+    }
+    .desc-feedback{
+        font-size: 2.5rem;
+    }
+    .client-name{
+        font-size: 2.25rem;
+    }
+    .jobtitle-company{
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,131 @@
+.card-mvv{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    max-width: 300px;
+    max-height: 100%;
+    font-size: 14px;
+     border-radius: 20px;
+    background-color: #e5ddddd9;
+    gap: 16px;
+    padding: 20px;
+    transition: all 0.2s ease;
+     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+  
+.card-mvv:hover{
+    transform: scale(1.05);    
+}
+
+.img-card-mvv{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+}
+
+.text-card-mvv-container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 36px;
+    gap: 16px;
+    padding: 8px ;
+    margin: 0;
+    min-height: 240px;
+}
+.text-card-mvv{
+    font-size: 20px;
+}
+.title-card-mvv{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 4px;
+}
+
+
+
+@media (min-width:425px)
+{
+    .card-mvv{
+        max-width: 390px;
+    } 
+}
+
+@media (min-width:768px)
+{
+    .card-mvv{
+        max-width: 520px;
+    } 
+
+    .text-card-mvv{
+        font-size: 24px;
+    }
+    .title-card-mvv{
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width:1024px)
+{
+    .card-mvv{
+        min-height: 480px;
+    } 
+
+    .text-card-mvv{
+        font-size: 24px;
+    }
+    .title-card-mvv{
+        font-size: 32px;
+    }
+
+}
+
+@media (min-width:1440px)
+{
+    .card-mvv{
+        max-width: 440px;
+    } 
+
+     .text-card-mvv{
+        font-size: 24px;
+    }
+    .title-card-mvv{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1920px)
+{
+    .card-mvv{
+        max-width: 600px;
+
+    } 
+     .text-card-mvv{
+        font-size: 36px;
+    }
+    .title-card-mvv{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:2560px)
+{
+    .card-mvv{
+        max-width: 720px;
+        min-height: 640px;
+    }
+
+    .title-card-mvv{
+        font-size: 40px;
+    }
+    .title-card-mvv{
+        font-size: 44px;
+    }
+    .img-card-mvv{
+    width: 120px;
+    height: 120px;}
+
+}
+
+

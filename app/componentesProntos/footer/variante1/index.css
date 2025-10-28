@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.general-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 24px 48px;
+}
+
+.contatos-celular-div {
+    display: none;
+}
+
+.logo-div {
+    display: flex;
+    border-radius: 12px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 80vw;
+}
+
+.logo-div img {
+    height: 100%;
+    width: 100%;
+}
+
+.endereço-div-pc {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 0.5rem;
+    max-width: 40vw;
+}
+
+.endereço {
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+.endereço-superior {
+    font-size: 24px;
+    font-weight: 600;
+    max-width: 100%;
+}
+
+.endereço-div-cell {
+    display: none;
+}
+
+@media (max-width: 810px) {
+    .endereço {
+        font-size: 18px;
+    }
+    .endereço-superior {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .general-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contatos-pc-div {
+        display: none;
+    }
+    
+    .endereço-div-pc {
+        text-align: center;
+        gap: 8px;
+    }
+
+    .contatos-celular-div {
+        display: block;
+    }
+
+    .endereço-div-pc {
+        display: none;
+    }
+
+    .endereço-div-cell {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+}
+
+@media (min-width: 1820px) {
+    .endereço-div-pc {
+        gap: 24px;
+    }
+    .endereço {
+        font-size: 28px;
+    }
+    .endereço-superior {
+        font-size: 32px;
+    }
+}

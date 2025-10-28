@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.redes a:hover {
+    scale: 1.05;
+    transition: all 0.2s ease-in-out;
+}
+
+.fale-conosco {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+@media (max-width: 950px) { /* Deixando desse tamanho, porque, apesar de não ser mobile, começa a quebrar pela distancia dos objetos ---> a intenção aqui não é ser mobile!*/
+    .contatos {
+        margin-left: 10px;
+    }
+
+    .redes {
+        gap: 8px;
+    }
+
+    .fale-conosco {
+        font-size: 20px;
+    }
+    
+}
+
+@media (max-width: 950px) {
+    .redes {
+        gap: 16px;
+    }
+}
+
+@media (min-width: 1820px) {
+    .contatos {
+        gap: 24px;
+    }
+    .fale-conosco {
+        font-size: 32px;
+    }
+    .redes {
+        gap: 54px;
+    }
+    .redes img {
+        width: 50px;
+        height: 50px;
+    }
+}

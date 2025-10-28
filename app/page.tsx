@@ -1,65 +1,89 @@
-import Image from "next/image";
+import HeroSectionOne from "./componentesProntos/herosection/variante1";
+import Navbar1 from "./componentesProntos/navbar/variante1";
+import SobreNosTwo from "./componentesProntos/sobrenos/variante2";
+import ServicesThree from "./componentesProntos/servicos/variante3";
+import FeedbackOne from "./componentesProntos/feedback/variante1";
+import FeedbackTwo from "./componentesProntos/feedback/variante2";
+import Footer1 from "./componentesProntos/footer/variante1";
 
 export default function Home() {
+
+  const pages = [
+    { name: "Home", url: "/" },
+    { name: "Sobre nós", url: "#sobre" },
+    { name: "Serviços", url: "#servicos" },
+    { name: "Feedbacks", url: "#feedback" },
+    { name: "Equipe", url: "#clientes" },
+    { name: "Gerenciamento", url: "/gerenciamento" },
+  ];
+
+  const links = [
+    { link: "https://instagram.com", icon: "/images/insta.png" },
+    { link: "https://facebook.com", icon: "/images/fb.png" },
+    { link: "https://mail.google.com", icon: "/images/email.png" },
+    { link: "https://linkedin.com", icon: "/images/linkedin.png" },
+    { link: "https://github.com/ViniCampos12", icon: "/images/phone.png" },
+  ];
+
+  const descriptionsCard = ["Tornar a terapia um espaço acessível, leve e transformador, promovendo o autoconhecimento, o bem-estar e equilíbrio emocional.", "Ser referência em atendimento psicológico humanizado, conectando pessoas ao seu próprio processo de desenvolvimento.", "Empatia Autenticidade Cuidado Evolução Individualidade Respeito Sensibilidade"];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main>
+      <Navbar1 
+        image_src="/images/logo.png" 
+        pages={pages} 
+        title_image="Psicode" 
+        link_color="#B54A22" 
+        style={{backgroundColor:"white", color:"#B54A22"}}
+      />
+      <HeroSectionOne 
+        image_src="/images/fundo-hero.png" 
+        text="Encontre clareza, leveza e bem-estar com o acompanhamento psicológico que respeita o seu tempo e a sua história."
+        text_style={{color:"white"}}
+      />
+      <SobreNosTwo 
+        description="Somos a Psicode, um consultório de psicologia que une ciência,  sensibilidade e cuidado para promover autoconhecimento e qualidade de vida.Nosso propósito é tornar a terapia acessível, leve e transformadora — um espaço seguro para você falar, refletir e crescer."
+        image_src="/images/sala.png"
+        description_card={descriptionsCard}
+        title_card={["Missão", "Visão", "Valores"]}
+        image_src_card={["/images/fundo-mvv.png", "/images/fundo-mvv.png", "/images/fundo-mvv.png"]}
+        style={{backgroundColor:"white", color:"black"}}
+        title_style={{color:"#B54A22"}}
+        style_card={{backgroundColor:"#B54A22",color:"white"}}
+      />
+      
+      <ServicesThree
+        title_card={["Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum","Lorem Ipsum",]}
+        description_card={["Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est modi quaerat sint tenetur aliquam","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est modi quaerat sint tenetur aliquam","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est modi quaerat sint tenetur aliquam","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est modi quaerat sint tenetur aliquam","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est modi quaerat sint tenetur aliquam","Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt est modi quaerat sint tenetur aliquam"]}
+        image_src_card={["/images/fundo-services.png","/images/fundo-services.png","/images/fundo-services.png","/images/fundo-services.png","/images/fundo-services.png","/images/fundo-services.png",]}
+        link_service={["https://google.com","https://google.com","https://google.com","https://google.com","https://google.com","https://google.com","https://google.com"]}
+        style={{backgroundColor:"#F7EDE1"}}
+        style_card={{backgroundColor:"#B54A22", color:"white"}}
+        text_style={{color:"#B54A22"}}
+      />
+
+      <FeedbackOne
+        style={{backgroundColor:"white", color:"#B54A22"}}
+        client_names={["Júlia", "Vinicius"]}
+        companies={["",""]}
+        descriptions={["“Gostaria de parabenizar o atendimento humanizado e individual. Particularmente, enxergo a grande diferença em não ter contato robotizado em passar valores ou tirar dúvidas etc, pois atendem a necessidade de cada um. Estou amando muito a atenção da psicóloga. Tem feito com que eu reflita sobre os assuntos discutidos e com que me sinta acolhida.”", "“Gostaria de parabenizar vocês pelo atendimento humanizado e individual. Particularmente, enxergo a grande diferença em não ter contato robotizado em passar valores ou tirar dúvidas etc, pois atendem a necessidade de cada um. Estou amando muito a atenção da psicóloga. Tem feito com que eu reflita sobre os assuntos discutidos e com que me sinta acolhida.”"]}
+        job_titles={["Paciente","Paciente"]}
+        card_style={{backgroundColor:"#F7EDE1"}}
+        dot_color={{background:"#B54A22"}}
+      />
+
+      <FeedbackTwo
+        style={{backgroundColor:"#F7EDE1",color:"#B54A22"}}
+        title="Nossos Psicólogos"
+        image_src_card={["/images/fed1.png","/images/fed2.png","/images/fed3.jpg","/images/fed4.png",]}
+      />
+      <Footer1
+        style={{backgroundColor:"#B54A22", color:"white"}}
+        image_src="/images/logo-nome.png"
+        information="Universidade Federal de Juiz de Fora"
+        title_information="Endereço"
+        links={links}
+      />
+    </main>
   );
 }

@@ -1,0 +1,62 @@
+.back{
+    display: flex;
+    width: 100%;
+    min-height: screen;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.block{
+    padding-top: 17%;
+    padding-bottom: 17%;
+    padding-left: 5%;
+    width: 70%;
+}
+
+.text{
+    font-size: 18px;
+    max-width:70%;
+}
+
+@media (min-width:425px)
+{
+    .text{
+        font-size: 20px;
+    }
+}
+
+@media (min-width:768px)
+{
+    .text{
+        font-size: 24px;
+    }
+}
+
+@media (min-width:1024px)
+{
+    .text{
+        font-size: 28px;
+    }
+}
+
+@media (min-width:1440px)
+{
+    .text{
+        font-size: 32px;
+    }
+}
+
+@media (min-width:1920px)
+{
+    .text{
+        font-size: 40px;
+    }
+}
+
+@media (min-width:2560px)
+{
+    .text{
+        font-size: 48px;
+    }
+}
