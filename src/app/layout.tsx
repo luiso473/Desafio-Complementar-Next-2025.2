@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Zain } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/src/app/componentesProntos/ChatWidget";
 
 
 const nunito = Nunito({
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${nunito.variable} ${zain.variable} antialiased`}
       >
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
