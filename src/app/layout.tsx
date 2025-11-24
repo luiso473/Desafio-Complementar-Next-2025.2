@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Zain } from "next/font/google";
 import "./globals.css";
-import ChatWidget from "@/src/app/componentesProntos/ChatWidget";
+import ChatWidget from "@/src/app/componentesProntos/chatbot/ChatWidget";
 
 
 const nunito = Nunito({
